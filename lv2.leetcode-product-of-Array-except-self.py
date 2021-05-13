@@ -10,7 +10,7 @@ class Solution(object):
         p = 1
         for i in range(len(nums) - 1, 0 - 1, -1):
             out[i] = out[i] * p
-            # 자기 자신 고정하고 오른쪽부터
+            # 자기 자신 고정하고 오른쪽부터 곱셈
             p = p * nums[i]
         return out
         """
