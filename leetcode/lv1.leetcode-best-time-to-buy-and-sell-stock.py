@@ -7,6 +7,7 @@ class Solution(object):
             min_price = min(min_price, price)
             profit = max(profit, price - min_price)
         return profit
+
         """
         :type prices: List[int]
         :rtype: int

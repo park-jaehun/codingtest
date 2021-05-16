@@ -13,6 +13,7 @@ class Solution(object):
             # 자기 자신 고정하고 오른쪽부터 곱셈
             p = p * nums[i]
         return out
+
         """
         :type nums: List[int]
         :rtype: List[int]

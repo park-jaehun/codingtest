@@ -13,6 +13,7 @@ class Solution(object):
                     left += 1
                 elif sum > 0:
                         right -= 1
+
                 else:
                     results.append((nums[i], nums[left], nums[right]))
 

@@ -6,6 +6,7 @@ class Solution(object):
                     ls = [i, j]
                     return ls
 
+
             ##(1) 브루트 포스로 계산
 
         """
