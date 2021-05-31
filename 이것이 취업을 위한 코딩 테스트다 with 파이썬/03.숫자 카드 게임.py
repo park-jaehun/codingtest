@@ -7,8 +7,3 @@ for i in range(n):
     min_result.append(min(ls))
 # 리스트의 최소값으 출력
 print(max(min_result))
-
-
-
-
-
