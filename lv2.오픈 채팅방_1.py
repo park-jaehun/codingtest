@@ -1,12 +1,14 @@
 # -*- coding: euc-kr -*-
 # -*- coding: utf-8 -*-
+import time
+start = time.time()
 def solution(record):
+    start = time.time()
     # Enter 문이 들어왔을 때
     id_name_dic = {}
     id_ls = []
     act_ls = []
     ans_ls = []
-
     def Enter(e_value):
         return [e_value.split(" ")[0], e_value.split(" ")[1], e_value.split(" ")[2]]
 
@@ -34,6 +36,8 @@ def solution(record):
     for uid, act in zip(id_ls, act_ls):
         ans_ls.append(id_name_dic[uid] + "님이" + " " + act)
 
-    print(ans_ls)
-    answer = []
-    return 1
+    return ans_ls
+
+sol = solution(["Enter uid1234 Muzi", "Enter uid4567 Prodo", "Leave uid1234", "Enter uid1234 Prodo", "Change uid4567 Ryan"])
+print(time.time() - start)
+print(sol)
